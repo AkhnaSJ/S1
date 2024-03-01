@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Javascript functions</title>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        <div>
+            Javascript is a  programming language that is widely popular all over the world.
+        </div>
+        <div>
+            <button onclick="showString()">String</button>
+            <button onclick="showMath()">Math</button>
+        </div>
+
+        <div id="string">
+            <h2>String Object</h2>
+            String Object is a  function used in javascript.
+        </div>
+
+        <div id="math">
+            <h2>Math Object</h2>
+            Math Object is a  function used in javascript.
+        </div>
+
+        <script>
+            let stringDiv = document.querySelector('#string');
+            let mathDiv = document.querySelector('#math');
+
+            function showString(){
+                mathDiv.style.display='none';
+                stringDiv.style.display='block';
+            }
+
+            function showMath(){
+                stringDiv.style.display='none';
+                mathDiv.style.display='block';
+            }
+        </script>
+
+    </body>
+</html>
